@@ -3,56 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aviso de Privacidad – GretAI</title>
+  <title>GretAI – Aviso de Privacidad</title>
+  <meta name="description" content="GretAI: recordatorios de citas por WhatsApp. Aviso de privacidad y consentimiento.">
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:860px;margin:40px auto;padding:0 16px;line-height:1.6}
-    h1,h2{line-height:1.25}
-    .box{background:#f7f7f8;border:1px solid #e5e7eb;border-radius:12px;padding:14px}
-    small{color:#555}
+    :root{
+      --bg:#ffffff; --text:#111827; --muted:#4b5563; --border:#e5e7eb; 
+      --accent:#2563eb; --accent2:#10b981;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    .wrap{max-width:980px;margin:0 auto;padding:24px}
+    .hero{display:flex;gap:18px;align-items:center;padding:10px 0 8px 0}
+    .hero img{width:120px;height:auto;border-radius:12px}
+    h1{font-size:clamp(28px,4vw,40px);margin:6px 0 2px 0}
+    .pill{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;
+      padding:4px 10px;border-radius:999px;font-weight:700;font-size:12px;margin-top:6px}
+    .card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:18px;margin:16px 0; box-shadow:0 4px 12px rgba(17,24,39,.04)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    a{color:var(--accent)}
+    small{color:var(--muted)}
+    .footer{margin:32px 0 16px 0;color:var(--muted);font-size:13px}
+    ul{margin-top:6px}
+    .consent{border-color:#d1fae5;background:#ecfdf5}
+    code{background:#f3f4f6;border:1px solid var(--border);padding:2px 6px;border-radius:6px;color:#111827}
   </style>
 </head>
 <body>
-  <h1>Aviso de Privacidad</h1>
-  <p><strong>GretAI</strong> (“nosotros”) con domicilio en 412 Montes Urales, México y correo de contacto <a href="mailto:jgomezt90@Greta757.onmicrosoft.com">jgomezt90@Greta757.onmicrosoft.com</a>, es responsable del tratamiento de datos personales conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México).</p>
+  <div class="wrap">
+    <div class="hero">
+      <img src="./gretai-logo.png" alt="GretAI logo">
+      <div>
+        <h1>GretAI</h1>
+        <div class="pill">Recordatorios de citas por WhatsApp</div>
+      </div>
+    </div>
 
-  <h2>Datos que tratamos</h2>
-  <ul>
-    <li>Identificación y contacto: nombre, teléfono (WhatsApp), correo.</li>
-    <li>Datos de cita/servicio: fecha, hora, recordatorios y estado.</li>
-  </ul>
+    <div class="card">
+      <p><strong>Domicilio:</strong> 412 Montes Urales, México &nbsp; | &nbsp;
+         <strong>Contacto:</strong> <a href="mailto:jgomezt90@Greta757.onmicrosoft.com">jgomezt90@Greta757.onmicrosoft.com</a></p>
+      <p><small>Última actualización: 2025-10-26</small></p>
+    </div>
 
-  <h2>Finalidades</h2>
-  <ul>
-    <li>Agendar y administrar citas/servicios.</li>
-    <li>Enviar <strong>mensajes por WhatsApp</strong> (recordatorios, confirmaciones y avisos relacionados con su cita/servicio).</li>
-    <li>Soporte y seguimiento.</li>
-  </ul>
+    <div class="grid">
+      <div class="card">
+        <h2 style="margin-top:0">Aviso de Privacidad</h2>
+        <p><strong>GretAI</strong> es responsable del tratamiento de datos personales conforme a la LFPDPPP (México).</p>
+        <ul>
+          <li>Identificación y contacto: nombre, teléfono (WhatsApp), correo.</li>
+          <li>Datos de cita/servicio: fecha, hora, recordatorios y estado.</li>
+        </ul>
+        <p>Finalidades: agendar y administrar citas, enviar mensajes relacionados por WhatsApp, soporte y seguimiento.</p>
+      </div>
 
-  <h2>Consentimiento para WhatsApp</h2>
-  <div class="box">
-    Al proporcionar su número y confirmar, usted <strong>autoriza</strong> recibir mensajes por <strong>WhatsApp</strong> de GretAI al número proporcionado.
-    Frecuencia: hasta 4 al mes.
-    Puede dejar de recibirlos en cualquier momento enviando <strong>“ALTO” o “STOP”</strong> por WhatsApp o escribiendo a <a href="mailto:jgomezt90@Greta757.onmicrosoft.com">jgomezt90@Greta757.onmicrosoft.com</a>.
+      <div class="card consent">
+        <h2 style="margin-top:0">Consentimiento para WhatsApp</h2>
+        <p>Al proporcionar su número y confirmar, usted <strong>autoriza</strong> recibir mensajes por <strong>WhatsApp</strong> de GretAI.
+           Frecuencia: hasta 4 al mes. Puede dejar de recibirlos enviando <strong>“ALTO” o “STOP”</strong> por WhatsApp o escribiendo a
+           <a href="mailto:jgomezt90@Greta757.onmicrosoft.com">jgomezt90@Greta757.onmicrosoft.com</a>.</p>
+      </div>
+
+      <div class="card">
+        <h2 style="margin-top:0">Encargados y transferencias</h2>
+        <p>Usamos <strong>Meta WhatsApp Cloud API</strong> como encargado para el envío de mensajes. Los datos pueden alojarse en
+           infraestructuras de Meta y otros proveedores tecnológicos para las finalidades indicadas.</p>
+        <p><strong>Conservación:</strong> se guardan por el tiempo necesario para prestar el servicio y cumplir obligaciones legales.</p>
+      </div>
+
+      <div class="card">
+        <h2 style="margin-top:0">Derechos ARCO y revocación</h2>
+        <p>Para ejercer acceso, rectificación, cancelación u oposición, o revocar su consentimiento, escriba a
+           <a href="mailto:jgomezt90@Greta757.onmicrosoft.com">jgomezt90@Greta757.onmicrosoft.com</a>. Responderemos en los plazos de ley.</p>
+        <p><strong>Seguridad:</strong> aplicamos medidas administrativas, técnicas y físicas para proteger los datos personales.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0">Eliminación de datos</h2>
+      <p>Para solicitar la eliminación, envíe <code>ALTO</code> o <code>ELIMINAR</code> por WhatsApp, o un correo a
+        <a href="mailto:jgomezt90@Greta757.onmicrosoft.com">jgomezt90@Greta757.onmicrosoft.com</a> con el asunto “Eliminación de datos”.</p>
+      <p>Consulta instrucciones detalladas en <a href="./deletion.html">esta página</a>.</p>
+    </div>
+
+    <p class="footer">© 2025 GretAI. Todos los derechos reservados.</p>
   </div>
-
-  <h2>Encargados y transferencias</h2>
-  <p>Usamos <strong>Meta WhatsApp Cloud API</strong> como encargado de tratamiento para el envío de mensajes. Sus datos pueden alojarse en infraestructuras de Meta Platforms y otros proveedores tecnológicos estrictamente para las finalidades indicadas.</p>
-
-  <h2>Conservación</h2>
-  <p>Conservamos los datos el tiempo necesario para prestar el servicio y cumplir obligaciones legales; después se suprimirán o anonimizarán razonablemente.</p>
-
-  <h2>Derechos ARCO y revocación</h2>
-  <p>Puede ejercer derechos de acceso, rectificación, cancelación u oposición (ARCO) y revocar su consentimiento escribiendo a <a href="mailto:jgomezt90@Greta757.onmicrosoft.com">jgomezt90@Greta757.onmicrosoft.com</a>. Responderemos en los plazos de ley.</p>
-
-  <h2>Seguridad</h2>
-  <p>Aplicamos medidas administrativas, técnicas y físicas para proteger los datos personales.</p>
-
-  <h2>Menores</h2>
-  <p>Si detectamos datos de menores de edad sin autorización del padre/madre o tutor, serán eliminados.</p>
-
-  <h2>Cambios</h2>
-  <p>Podemos actualizar este aviso; publicaremos la versión vigente en esta URL. Última actualización: <time>2025-10-26</time>.</p>
-
-  <p><small>Para dudas de privacidad: <a href="mailto:jgomezt90@Greta757.onmicrosoft.com">jgomezt90@Greta757.onmicrosoft.com</a></small></p>
 </body>
 </html>
